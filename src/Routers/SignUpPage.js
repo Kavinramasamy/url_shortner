@@ -51,7 +51,7 @@ const SignUpPage = () => {
             },
         });
     function testPassword(password) {
-        const passwordRegex = /^(?=.*[A-Z])(?=.*[0-9])(?=.[a-z])[a-zA-z-9].{8,15}$/;
+        const passwordRegex = /^(?=.*[A-Z])(?=.*[0-8])(?=.[a-z])[a-zA-z-8].{8,15}$/;
         if (passwordRegex.test(password)) {
             values.password = password;
             setPasswordState("");
