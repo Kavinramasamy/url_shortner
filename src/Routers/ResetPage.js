@@ -31,7 +31,7 @@ const ResetPage = () => {
                         );
                     }
                     const response = await fetch(
-                        "https://short-url-backend.vercel.app/resetpassword",
+                        "https://url-shortner-backend-gamma.vercel.app/resetpassword",
                         {
                             method: "PUT",
                             body: JSON.stringify(loginInfo),
@@ -65,13 +65,13 @@ const ResetPage = () => {
                     <input
                         type="password"
                         className={`form-control my-2 ${touched.password && errors.password
-                                ? "border-danger border-2"
-                                : ""
+                            ? "border-danger border-2"
+                            : ""
                             }`}
                         id="password"
                         placeholder={` ${touched.password && errors.password
-                                ? errors.password
-                                : "New password"
+                            ? errors.password
+                            : "New password"
                             }`}
                         value={values.password}
                         onChange={handleChange}
@@ -83,13 +83,13 @@ const ResetPage = () => {
                     <input
                         type="password"
                         className={`form-control my-2 ${touched.conformPassword && errors.conformPassword
-                                ? "border-danger border-2"
-                                : ""
+                            ? "border-danger border-2"
+                            : ""
                             }`}
                         id="conformPassword"
                         placeholder={`${touched.conformPassword && errors.conformPassword
-                                ? errors.conformPassword
-                                : "Conform Password"
+                            ? errors.conformPassword
+                            : "Conform Password"
                             }`}
                         onChange={handleChange}
                         onBlur={handleBlur}

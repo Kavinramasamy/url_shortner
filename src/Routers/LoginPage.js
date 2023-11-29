@@ -22,7 +22,7 @@ const LoginPage = () => {
                 try {
                     setLoginInfo("Please wait");
                     const response = await fetch(
-                        "https://short-url-backend.vercel.app/login",
+                        "https://url-shortner-backend-gamma.vercel.app/login",
                         {
                             method: "POST",
                             body: JSON.stringify(loginInfo),

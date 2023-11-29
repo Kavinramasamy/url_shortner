@@ -8,7 +8,7 @@ const ActivatePage = () => {
             email: localStorage["url-short-email"],
         };
         const response = await fetch(
-            "https://short-url-backend.vercel.app/activation",
+            "https://url-shortner-backend-gamma.vercel.app/activation",
             {
                 method: "PUT",
                 body: JSON.stringify(activationInfo),

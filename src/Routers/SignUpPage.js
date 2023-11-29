@@ -27,7 +27,7 @@ const SignUpPage = () => {
                 localStorage.setItem("url-short-email", signUpInfo.email);
                 try {
                     const response = await fetch(
-                        "https://short-url-backend.vercel.app/signup",
+                        "https://url-shortner-backend-gamma.vercel.app/signup",
                         {
                             method: "POST",
                             body: JSON.stringify(signUpInfo),
@@ -73,14 +73,14 @@ const SignUpPage = () => {
                     <input
                         type="userName"
                         className={`form-control my-2 ${touched.userName && errors.userName
-                                ? "border-danger border-2"
-                                : ""
+                            ? "border-danger border-2"
+                            : ""
                             }`}
                         id="userName"
                         aria-describedby="usernameHelp"
                         placeholder={`${touched.userName && errors.userName
-                                ? errors.userName
-                                : "Enter username"
+                            ? errors.userName
+                            : "Enter username"
                             }`}
                         value={values.userName}
                         onChange={handleChange}
@@ -107,13 +107,13 @@ const SignUpPage = () => {
                     <input
                         type="password"
                         className={`form-control my-2 ${touched.password && errors.password
-                                ? "border-danger border-2"
-                                : ""
+                            ? "border-danger border-2"
+                            : ""
                             }`}
                         id="password"
                         placeholder={` ${touched.password && errors.password
-                                ? errors.password
-                                : "Enter password"
+                            ? errors.password
+                            : "Enter password"
                             }`}
                         onChange={(e) => testPassword(e.target.value)}
                         onBlur={handleBlur}

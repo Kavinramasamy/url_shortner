@@ -9,7 +9,7 @@ const URLPage = () => {
         async function getUrlList() {
             try {
                 const response = await fetch(
-                    "https://short-url-backend.vercel.app/shorturl",
+                    "https://url-shortner-backend-gamma.vercel.app/shorturl",
                     {
                         method: "POST",
                         headers: {

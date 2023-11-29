@@ -23,7 +23,7 @@ const URLCreatePage = () => {
                 setState("Please wait...");
                 try {
                     const response = await fetch(
-                        "https://short-url-backend.vercel.app/newshorturl",
+                        "https://url-shortner-backend-gamma.vercel.app/newshorturl",
                         {
                             method: "POST",
                             body: JSON.stringify(urlInfo),

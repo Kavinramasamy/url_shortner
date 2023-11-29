@@ -21,7 +21,7 @@ const Forgetpassword = () => {
                 try {
                     setState("Please wait...");
                     const response = await fetch(
-                        "https://short-url-backend.vercel.app/forgetpassword",
+                        "https://url-shortner-backend-gamma.vercel.app/forgetpassword",
                         {
                             method: "PUT",
                             body: JSON.stringify(loginInfo),
