@@ -38,7 +38,7 @@ const URLCreatePage = () => {
                     const data = await response.json();
                     if (data.message === "success") {
                         const shortURL =
-                            "https://short-url-backend.vercel.app/" + data.newUrl.short_url;
+                            "https://url-shortner-one-theta.vercel.app/" + data.newUrl.short_url;
                         setShort("--Shorted URL--");
                         setState(<a href={shortURL}>{shortURL}</a>);
                     } else {
